@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/originals/5a/10/9c/5a109cdb335966bee30879c61a31522b.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>sign up</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="sign up.html">sign up</a></li>
+      <li>
+      </li>
+      <li id="ter">
+        <input type="color" id="colorpicker" onchange="colorchange()" />
+      </li>
+    </ul>
+
+    <div id="div">
+      <center>
+        <form>
+          <label>email</label>
+          <input type="email" />
+          <br />
+          <label>password</label>
+          <input type="password" />
+          <br />
+          <input type="radio" />
+          <bN r />
+          <input id="imgepicker" type="file" onchange="profilechange()" />
+        </form>
+        <br /><img
+          id="img"
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+          alt=""
+        />
+      </center>
+    </div>
+    <center></center>
+    <script>
+      function colorchange() {
+        var newcolor = document.getElementById("colorpicker").value;
+        document.body.style.background = newcolor;
+      }
+      function profilechange() {
+        var newimge = document.getElementById("imgepicker").files[0].name;
+        document.getElementById("img").src = newimge;
+      }
+    </script>
+  </body>
+</html>

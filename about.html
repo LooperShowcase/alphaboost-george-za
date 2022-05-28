@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/originals/5a/10/9c/5a109cdb335966bee30879c61a31522b.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>about</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="sign up.html">sign up</a></li>
+     
+      <li id="ter">
+        <input type="color" id="colorpicker" onchange="colorchange()" />
+      </li>
+    </ul>
+    <center>
+      <img
+        src="https://46c4ts1tskv22sdav81j9c69-wpengine.netdna-ssl.com/wp-content/uploads/sites/2/2018/04/618956cf94aeba8a46fa618c09dadc57.jpg"
+        alt="500"
+      />
+    </center>
+    <p>
+      Xbox, video game console system created by the American company Microsoft.
+      The Xbox, Microsoft's first entry into the world of console electronic
+      gaming, was released in 2001, which placed it in direct competition with
+      Sony's PlayStation 2 and Nintendo's GameCube.
+    </p>
+    <script>
+      function colorchange() {
+        var newcolor = document.getElementById("colorpicker").value;
+        document.body.style.background = newcolor;
+      }
+    </script>
+  </body>
+</html>
